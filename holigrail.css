@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    height: 10vh;
+    background-color: lightblue;
+    padding: 25px;
+    width: 80%
+}
+
+main {
+    display: flex;
+    height: 50vh;
+    width: 80%
+}
+
+article {
+    width: 60%;
+    background-color: antiquewhite;
+    margin: 25px;
+    height: 78%;
+    padding: 25px;
+}
+
+nav {
+    width: 20%;
+    height: 100%;
+    background-color: lightcoral;
+    padding: 25px;
+}
+
+aside {
+    width: 20%;
+    height: 100%;
+    background-color: lightcyan;
+    padding: 25px;
+}
+
+form {
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    column-gap: 40px;
+}
+
+.left {
+    width: 60%;
+}
+
+.item-left {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.item-left label {
+    flex: 1;
+    padding: 10px;
+}
+
+.item-left input, select {
+    flex: 2;
+    padding: 10px;
+}
+
+.item-left input#name,
+input#phone,
+input#email, 
+select#pickupPlace,
+input#dropOff{
+    flex: 3;
+}
+
+.right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+/* ROUNDED CHECKBOX FOR REVIEW */
+
+/* .vehicles input[type="checkbox"] {
+    margin-top: 7px;
+    width: 15px;                         
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+    appearance: none;
+    background-color: white;
+}
+
+.vehicles input[type="checkbox"]:checked {
+    appearance: auto;
+    clip-path: circle(50% at 50% 50%);
+    background-color: blue;
+}
+
+.vehicles input[type="checkbox"], 
+label, 
+.extra input[type="checkbox"], 
+label {
+    vertical-align: middle;
+    cursor: pointer;
+} */
+
+.extra input[type="checkbox"],
+.vehicles input[type="radio"] {
+    margin-top: 7px;
+}
+
+.button-submit {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.button-submit input[type="submit"] {
+    padding: 17px 19px 17px 19px;
+    border-radius: 0;
+    border: 1px solid rgb(90, 90, 74);
+    cursor: pointer;
+    color: white;
+    background-color: rgb(90, 90, 74);
+}
+
+.button-submit input[type="submit"]:hover {
+    padding: 17px 19px 17px 19px;
+    border-radius: 0;
+    border: 1px solid rgb(90, 90, 74);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
