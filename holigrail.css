@@ -23,8 +23,7 @@ main {
 article {
     width: 60%;
     background-color: antiquewhite;
-    margin: 25px;
-    height: 78%;
+    margin: 25px 25px 55px 25px;
     padding: 25px;
 }
 
